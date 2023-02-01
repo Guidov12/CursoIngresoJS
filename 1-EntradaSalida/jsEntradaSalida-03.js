@@ -10,7 +10,7 @@ function mostrar()
 
 	nombreIngresado = document.getElementById("txtIdNombre").value;
 
-	alert(nombreIngresado); 
+	alert("el nombre ingresado fue "+nombreIngresado); 
 }
 
 
