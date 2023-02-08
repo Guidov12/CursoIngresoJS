@@ -25,7 +25,7 @@ ej.: "El resto es 0 ."*/
 	segundoNumero = parseInt(segundoNumeroIngresado);
 
 	//Se realiza la operacion.
-	resultado = primerNumero / segundoNumero;
+	resultado = primerNumero % segundoNumero;
 	
 	//Por ultimo se da el resultado.
 	alert("el resto es " + resultado);	

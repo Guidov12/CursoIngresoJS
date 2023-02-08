@@ -3,21 +3,46 @@ Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
-function mostrarAumento()
+
+//Guido Varese, Ejercicio 9.
+	function mostrarAumento()
 {
-	var primerNumeroIngresado
-	var segundoNumeroIngresado
-	var primerNumero
-	var segundoNumero
-	var resultado
+	//Declaro las variables.
+	var importe;
+	var aumento;
+	var resultado;
 
-	primerNumeroIngresado = document.getElementById("txtIdSueldo").value;
-	segundoNumeroIngresado = document.getElementById("txtIdResultado").value;
+	aumento = 1.10
 
-	primerNumero = parseInt(primerNumeroIngresado);
-	segundoNumero = parseInt(segundoNumeroIngresado);
+	//Tomo el dato correspondiente.
+	importe = document.getElementById("txtIdSueldo").value;
 
-	resultado = primerNumero  segundoNumero;
+	//Parseo.
+	importe = parseFloat(importe);
 
-	alert("El resultado del importe es " + resultado)
+	//Realizo la operacion.
+	resultado = importe * aumento;
+
+	//Muestro el resultado por .value.
+	document.getElementById("txtIdResultado").value = resultado;
 }
+
+//Guido Varese, Ejercicio 9 Bis.
+
+//Declaro las variables.
+	var importe;
+	var aumento;
+	var resultado;
+
+	aumento = 1.10
+
+	//Tomo el dato correspondiente.
+	importe = Prompt("Ingrese el sueldo")
+	//Parseo.
+	importe = parseFloat(importe);
+
+	//Realizo la operacion.
+	resultado = importe * aumento;
+
+	//Muestro el resultado por .value.
+	document.getElementById("txtIdResultado").value = resultado;

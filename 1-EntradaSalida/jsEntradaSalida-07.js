@@ -10,26 +10,21 @@ ej.: "la Resta es 750"*/
 
 	function sumar()	
 {	
-	//Declaro las variables.
 	var primerNumeroIngresado;
 	var segundoNumeroIngresado;
 	var primerNumero;
 	var segundoNumero;
 	var resultado;
 
-	//Capturo los datos de la pagina.
 	primerNumeroIngresado = document.getElementById("txtIdNumeroUno").value;
 	segundoNumeroIngresado = document.getElementById("txtIdNumeroDos").value;
 
-	//Convierto los datos para poder operar.
-	primerNumero = parseInt(primerNumeroIngresado);
-	segundoNumero = parseInt(segundoNumeroIngresado);
+	primerNumero = parseFloat(primerNumeroIngresado);
+	segundoNumero = parseFloat(segundoNumeroIngresado);
 
-	//Realizo la operacion.
 	resultado = primerNumero + segundoNumero;
 
-	//Muestro el resultado.
-	alert("el resultado de la suma es " + resultado);	
+	alert("El resultado de la suma es " + resultado);
 }
 
 	
